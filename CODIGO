@@ -1,0 +1,14 @@
+#Esta calculadora puede sumar, restar, divir y multiplicar
+#Solo se puede operar dos valores a la vez
+def multiplicación(x,y):
+    operación=(x*y)
+    return operación
+print("CALCULADORA,", "solo puedes operar dos valores a la vez")
+print("¿Qué deseas hacer?")
+rpta= str(input())
+if (rpta=="multiplicar") or (rpta=="MULTIPLICAR"):
+    print("Ingrese primer valor")
+    v1=float(input())
+    print("Ingrese segundo valor")
+    v2=float(input())
+    print("Respuesta:", multiplicación(v1,v2))
