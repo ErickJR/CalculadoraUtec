@@ -6,6 +6,9 @@ def multiplicación(x,y):
 def adición(x,y):
     operación2=(x+y)
     return operación2
+def división(x,y):
+    operación3=(x/y)
+    return operación3
 print("CALCULADORA,", "solo puedes operar dos valores a la vez")
 print("¿Qué deseas hacer?")
 rpta= str(input())
@@ -29,12 +32,19 @@ if (rpta=="multiplicar") or (rpta=="MULTIPLICAR")or(rpta=="Multiplicar"):
                 v6=float(input())
                 print("Respuesta:", multiplicación(v5,v6))
                 i=i+1
-            if(re=="SUMAR")or (re=="sumar") or (re=="Sumar"):
+            elif(re=="SUMAR")or (re=="sumar") or (re=="Sumar"):
                 print("Ingrese primer valor")
                 v7=float(input())
                 print("Ingrese segundo valor")
                 v8=float(input())
                 print("Respuesta:", adición(v7,v8))
+                i=i+1
+            elif (re=="Dividir") or (re=="DIVIDIR") or (re=="dividir"):
+                print("Ingrese primer valor")
+                v11=float(input())
+                print("Ingrese segundo valor")
+                v12=float(input())
+                print("Respuesta:", división(v11,v12))
                 i=i+1
         else:
             print("Programa terminado")
@@ -46,7 +56,7 @@ elif (rpta=="sumar") or(rpta=="SUMAR") or(rpta=="Sumar"):
     print("Ingrese segundo valor")
     v4=float(input())
     print("Respuesta:", adición(v3,v4))
-    
+
     for i in range(0,1000000):
         print("¿Quíeres realizar otra operación?")
         ans=str(input())
@@ -60,14 +70,59 @@ elif (rpta=="sumar") or(rpta=="SUMAR") or(rpta=="Sumar"):
                 v6=float(input())
                 print("Respuesta:", multiplicación(v5,v6))
                 i=i+1
-            if(re=="SUMAR")or (re=="sumar") or (re=="Sumar"):
+            elif(re=="SUMAR")or (re=="sumar") or (re=="Sumar"):
                 print("Ingrese primer valor")
                 v7=float(input())
                 print("Ingrese segundo valor")
                 v8=float(input())
                 print("Respuesta:", adición(v7,v8))
                 i=i+1
+            elif (re=="Dividir") or (re=="DIVIDIR") or (re=="dividir"):
+                print("Ingrese primer valor")
+                v11=float(input())
+                print("Ingrese segundo valor")
+                v12=float(input())
+                print("Respuesta:", división(v11,v12))
+                i=i+1
         else:
             print("Programa terminado")
             break
+elif (rpta=="DIVIDIR") or (rpta=="Dividir") or (rpta=="dividir"):
+    print("Ingrese primer valor")
+    v9= float(input())
+    print("Ingrese segundo valor")
+    v10= float(input())
+    print("Respuesta:", división(v9,v10))
+
+    for i in range(0,1000000):
+        print("¿Quíeres realzar otra operación?")
+        ans=str(input())
+        if (ans=="Si") or (ans=="SI") or (ans=="si"):
+            print("¿Qué deseas hacer?")
+            re=str(input())
+            if (re=="multiplicar") or (re=="MULTIPLICAR")or(re=="Multiplicar"):
+                print("Ingrese primer valor")
+                v5=float(input())
+                print("Ingrese segundo valor")
+                v6=float(input())
+                print("Respuesta:", multiplicación(v5,v6))
+                i=i+1
+            elif(re=="SUMAR")or (re=="sumar") or (re=="Sumar"):
+                print("Ingrese primer valor")
+                v7=float(input())
+                print("Ingrese segundo valor")
+                v8=float(input())
+                print("Respuesta:", adición(v7,v8))
+                i=i+1
+            elif (re=="Dividir") or (re=="DIVIDIR") or (re=="dividir"):
+                print("Ingrese primer valor")
+                v11=float(input())
+                print("Ingrese segundo valor")
+                v12=float(input())
+                print("Respuesta:", división(v11,v12))
+                i=i+1
+        else:
+            print("Programa terminado")
+            break
+
 
