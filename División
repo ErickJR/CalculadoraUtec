@@ -1,0 +1,4 @@
+dividendo=float(input("ingrese el dividendo: "))
+divisor=float(input("ingrese el divisor: "))
+
+print("el resultado es: ", dividendo/divisor)
