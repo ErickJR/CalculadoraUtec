@@ -3,12 +3,71 @@
 def multiplicación(x,y):
     operación=(x*y)
     return operación
+def adición(x,y):
+    operación2=(x+y)
+    return operación2
 print("CALCULADORA,", "solo puedes operar dos valores a la vez")
 print("¿Qué deseas hacer?")
 rpta= str(input())
-if (rpta=="multiplicar") or (rpta=="MULTIPLICAR"):
+if (rpta=="multiplicar") or (rpta=="MULTIPLICAR")or(rpta=="Multiplicar"):
     print("Ingrese primer valor")
     v1=float(input())
     print("Ingrese segundo valor")
     v2=float(input())
     print("Respuesta:", multiplicación(v1,v2))
+
+    for i in range(0,1000000):
+        print("¿Quíeres realizar otra operación?")
+        ans=str(input())
+        if (ans=="Si") or (ans=="SI") or (ans=="si"):
+            print("¿Qué deseas hacer?")
+            re=str(input())
+            if (re=="multiplicar") or (re=="MULTIPLICAR")or(re=="Multiplicar"):
+                print("Ingrese primer valor")
+                v5=float(input())
+                print("Ingrese segundo valor")
+                v6=float(input())
+                print("Respuesta:", multiplicación(v5,v6))
+                i=i+1
+            if(re=="SUMAR")or (re=="sumar") or (re=="Sumar"):
+                print("Ingrese primer valor")
+                v7=float(input())
+                print("Ingrese segundo valor")
+                v8=float(input())
+                print("Respuesta:", adición(v7,v8))
+                i=i+1
+        else:
+            print("Programa terminado")
+            break
+
+elif (rpta=="sumar") or(rpta=="SUMAR") or(rpta=="Sumar"):
+    print("Ingrese primer valor")
+    v3=float(input())
+    print("Ingrese segundo valor")
+    v4=float(input())
+    print("Respuesta:", adición(v3,v4))
+    
+    for i in range(0,1000000):
+        print("¿Quíeres realizar otra operación?")
+        ans=str(input())
+        if (ans=="Si") or (ans=="SI") or (ans=="si"):
+            print("¿Qué deseas hacer?")
+            re=str(input())
+            if (re=="multiplicar") or (re=="MULTIPLICAR")or(re=="Multiplicar"):
+                print("Ingrese primer valor")
+                v5=float(input())
+                print("Ingrese segundo valor")
+                v6=float(input())
+                print("Respuesta:", multiplicación(v5,v6))
+                i=i+1
+            if(re=="SUMAR")or (re=="sumar") or (re=="Sumar"):
+                print("Ingrese primer valor")
+                v7=float(input())
+                print("Ingrese segundo valor")
+                v8=float(input())
+                print("Respuesta:", adición(v7,v8))
+                i=i+1
+        else:
+            print("Programa terminado")
+            break
+
